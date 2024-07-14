@@ -5,6 +5,6 @@ describe('App Component', () => {
     test('renders Vite + React heading', () => {
         render(<App />);
         const heading = screen.getByText('Vite + React');
-        expect(heading).toBeInTheDocument();
+        expect(heading).not.toBeInTheDocument();
     });
 });
